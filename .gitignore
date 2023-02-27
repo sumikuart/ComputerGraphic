@@ -396,3 +396,13 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+*.v2
+*.vsidx
+.vs/ComputerGraphic/v17/.futdcache.v2
+*.db
+.vs/ComputerGraphic/v17/.suo
+*.v2
+*.pdb
+*.dll
+*.1
+*.cache
