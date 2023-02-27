@@ -45,6 +45,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "OpenTK": {
               "target": "Package",
               "version": "[4.7.7, )"
@@ -52,6 +56,10 @@
             "SharpFont": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "SharpFont.Dependencies": {
+              "target": "Package",
+              "version": "[2.6.0, )"
             },
             "StbImageSharp": {
               "target": "Package",

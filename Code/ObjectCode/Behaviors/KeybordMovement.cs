@@ -26,23 +26,23 @@ namespace ComputerGraphic.Code
         {
             KeyboardState input = window.KeyboardState;
 
-            if (input.IsKeyDown(Keys.W))
+            if (input.IsKeyDown(Keys.Up))
             {
                 gameObject.transform.Position.Y += movementSpeed * (float)e.Time;
             }
 
-            if (input.IsKeyDown(Keys.S))
+            if (input.IsKeyDown(Keys.Down))
             {
                 gameObject.transform.Position.Y -= movementSpeed * (float)e.Time;
             }
 
 
-            if (input.IsKeyDown(Keys.A))
+            if (input.IsKeyDown(Keys.Left))
             {
                 gameObject.transform.Position.X -= movementSpeed * (float)e.Time;
             }
 
-            if (input.IsKeyDown(Keys.D))
+            if (input.IsKeyDown(Keys.Right))
             {
                 gameObject.transform.Position.X += movementSpeed * (float)e.Time;
             }

@@ -33,38 +33,5 @@ C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\Firs
 C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\bin\Debug\net7.0\runtimes\win-x86\native\glfw3.dll
 C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.csproj.CopyComplete
 C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.genruntimeconfig.cache
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\SharpFont.dll.config
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\Assets\Images\AragonTex.jpg
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\Assets\Images\AragonTexUdenBaggrund.png
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\Assets\Images\wall.jpg
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\ComputerGraphic.exe
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\ComputerGraphic.deps.json
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\ComputerGraphic.runtimeconfig.json
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\ComputerGraphic.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\ComputerGraphic.pdb
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Compute.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Core.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Graphics.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Input.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Mathematics.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.OpenAL.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Windowing.Common.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Windowing.Desktop.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\OpenTK.Windowing.GraphicsLibraryFramework.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\StbImageSharp.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\runtimes\linux-x64\native\libglfw.so.3.3
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\runtimes\osx-arm64\native\libglfw.3.dylib
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\runtimes\osx-x64\native\libglfw.3.dylib
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\runtimes\win-x64\native\glfw3.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\bin\Debug\net7.0\runtimes\win-x86\native\glfw3.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.csproj.AssemblyReference.cache
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.GeneratedMSBuildEditorConfig.editorconfig
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.AssemblyInfoInputs.cache
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.AssemblyInfo.cs
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.csproj.CoreCompileInputs.cache
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.csproj.CopyComplete
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\refint\ComputerGraphic.dll
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.pdb
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.genruntimeconfig.cache
-D:\Users\mathias\Documents\Github\ComputerGraphic\obj\Debug\net7.0\ref\ComputerGraphic.dll
+C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\bin\Debug\net7.0\freetype6.dll
+C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
