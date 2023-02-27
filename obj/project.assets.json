@@ -648,23 +648,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\smikk\\.nuget\\packages\\": {},
+    "C:\\Users\\Mathias\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj",
+      "projectUniqueName": "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\ComputerGraphic.csproj",
       "projectName": "ComputerGraphic",
-      "projectPath": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj",
-      "packagesPath": "C:\\Users\\smikk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\obj\\",
+      "projectPath": "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\ComputerGraphic.csproj",
+      "packagesPath": "C:\\Users\\Mathias\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\smikk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mathias\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -673,6 +673,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

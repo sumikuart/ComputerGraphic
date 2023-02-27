@@ -63,6 +63,11 @@ namespace ComputerGraphic.Code.ObjectCode
         static int vertexBufferObject;
         private static bool buffersCreated;
 
+        public CubeMesh()
+        {
+            GenerateBuffers();
+        }
+
         protected override void GenerateBuffers()
         {
             if (buffersCreated)

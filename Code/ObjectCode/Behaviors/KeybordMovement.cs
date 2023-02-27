@@ -46,6 +46,31 @@ namespace ComputerGraphic.Code
             {
                 gameObject.transform.Position.X += movementSpeed * (float)e.Time;
             }
+
+            if (input.IsKeyDown(Keys.Up))
+            {
+                gameObject.transform.Rotation.X += movementSpeed * (float)e.Time;
+            }
+            if (input.IsKeyDown(Keys.Down))
+            {
+                gameObject.transform.Rotation.X -= movementSpeed * (float)e.Time;
+            }
+            if (input.IsKeyDown(Keys.Left))
+            {
+                gameObject.transform.Rotation.Z += movementSpeed * (float)e.Time;
+            }
+            if (input.IsKeyDown(Keys.Right))
+            {
+                gameObject.transform.Rotation.Z -= movementSpeed * (float)e.Time;
+            }
+            if (input.IsKeyDown(Keys.Q))
+            {
+                gameObject.transform.Rotation.Y += movementSpeed * (float)e.Time;
+            }
+            if (input.IsKeyDown(Keys.E))
+            {
+                gameObject.transform.Rotation.Y -= movementSpeed * (float)e.Time;
+            }
         }
     }
 }

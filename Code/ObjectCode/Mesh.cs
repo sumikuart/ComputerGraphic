@@ -14,14 +14,13 @@ namespace ComputerGraphic.Code
         protected int elementBufferObject;
         protected int vertexBufferObject;
 
-        protected virtual float[] Vertices { get; }
-        protected virtual uint[] Indices { get; }
+        protected virtual float[] Vertices { get; set; }
+        protected virtual uint[] Indices { get; set; }
 
 
         public Mesh()
         {
 
-            GenerateBuffers();
         }
 
         public virtual void Draw()
