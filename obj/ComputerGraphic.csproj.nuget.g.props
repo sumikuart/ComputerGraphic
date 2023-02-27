@@ -14,6 +14,7 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)sharpfont.dependencies\2.6.0\build\SharpFont.Dependencies.props" Condition="Exists('$(NuGetPackageRoot)sharpfont.dependencies\2.6.0\build\SharpFont.Dependencies.props')" />
     <Import Project="$(NuGetPackageRoot)sharpfont\4.0.1\build\SharpFont.props" Condition="Exists('$(NuGetPackageRoot)sharpfont\4.0.1\build\SharpFont.props')" />
   </ImportGroup>
 </Project>
