@@ -43,7 +43,24 @@ namespace ComputerGraphic.Code
 
         public void AddComponent<T>(params object?[]? args) where T : Behavior
         {
-            behaviors.Add(Activator.CreateInstance(typeof(T), this, gameWindow) as T);
+            if(args == null)
+            {
+                behaviors.Add(Activator.CreateInstance(typeof(T), this, gameWindow) as T);
+            } else
+            {
+                int initPramameters = 2;
+                int totaltParams = args.Length + initPramameters;
+                object?[]? objects = new object[totaltParams];
+                objects[0] = this;
+                objects[1] = gameWindow;
+                for(int i = initPramameters;  i < totaltParams; i++)
+                {
+                    objects[i] = args[i - 2];
+                }
+
+                behaviors.Add(Activator.CreateInstance(typeof(T),objects) as T);
+            }
+    
         }
 
 
@@ -57,6 +74,7 @@ namespace ComputerGraphic.Code
 
         public void Draw(Matrix4 vp)
         {
+            if(render != null)
             render.Draw(transform.CalculateModel() * vp);
         }
 

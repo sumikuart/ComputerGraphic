@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ComputerGraphic.Code.ObjectCode;
+using ComputerGraphic.Code.ObjectCode.Behaviors;
 using OpenTK;
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
@@ -31,7 +32,7 @@ namespace ComputerGraphic.Code
             public float RotationDegree = 0;
 
             private List<GameObject> gameObjects = new List<GameObject>();
-
+            Camera camera;
             public Game(GameWindowSettings gameWindowSettings, NativeWindowSettings nativeWindowSettings) : base(gameWindowSettings, nativeWindowSettings)
             {
             }
@@ -62,6 +63,11 @@ namespace ComputerGraphic.Code
 
                 cube.transform.Position = new Vector3(1, 0, 0);
 
+                GameObject cam = new GameObject(null, this);
+                cam.AddComponent<Camera>(60.0f, (float)Size.X, (float)Size.Y, 0.3f, 1000.0f);
+                camera = cam.GetComponent<Camera>();
+
+                gameObjects.Add(cam);
                 gameObjects.Add(triangle);
                 gameObjects.Add(cube);
 
@@ -82,7 +88,7 @@ namespace ComputerGraphic.Code
                 Matrix4 view = Matrix4.CreateTranslation(0.0f, 0.0f, -3.0f);
                 Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(60.0f), (float)Size.X / (float)Size.Y, 0.3f, 1000.0f);
 
-                gameObjects.ForEach(x => x.Draw(view * projection));
+                gameObjects.ForEach(x => x.Draw(camera.GetViewProjection()));
 
 
                 Context.SwapBuffers();
@@ -95,8 +101,7 @@ namespace ComputerGraphic.Code
                  base.OnUpdateFrame(args);
                  gameObjects.ForEach(x => x.Update(args));
 
-
-            }
+        }
 
             protected override void OnResize(ResizeEventArgs e)
             {
