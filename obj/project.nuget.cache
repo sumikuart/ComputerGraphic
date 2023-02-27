@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "dgSpecHash": "bZgzevqDoKXMN2sEL0AqKgwzKp/kWfuR6d1Vmndp9NAqitCMS1tyAkt3QYgE8NBBFRiJbiXN8PjnHecDKdt3rA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\smikk\\.nuget\\packages\\freetype\\2.8.0.1\\freetype.2.8.0.1.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\freetype.redist\\2.8.0.1\\freetype.redist.2.8.0.1.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk\\4.7.7\\opentk.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.compute\\4.7.7\\opentk.compute.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.core\\4.7.7\\opentk.core.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.graphics\\4.7.7\\opentk.graphics.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.input\\4.7.7\\opentk.input.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.mathematics\\4.7.7\\opentk.mathematics.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.openal\\4.7.7\\opentk.openal.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.redist.glfw\\3.3.8.30\\opentk.redist.glfw.3.3.8.30.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.windowing.common\\4.7.7\\opentk.windowing.common.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.windowing.desktop\\4.7.7\\opentk.windowing.desktop.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\opentk.windowing.graphicslibraryframework\\4.7.7\\opentk.windowing.graphicslibraryframework.4.7.7.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\sharpfont\\4.0.1\\sharpfont.4.0.1.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\sharpfont.dependencies\\2.5.5\\sharpfont.dependencies.2.5.5.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\stbimagesharp\\2.27.13\\stbimagesharp.2.27.13.nupkg.sha512",
+    "C:\\Users\\smikk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1602",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "SharpFont 4.0.1 does not provide an inclusive lower bound for dependency SharpFont.Dependencies. An approximate best match of SharpFont.Dependencies 2.5.5 was resolved.",
+      "libraryId": "SharpFont.Dependencies",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
