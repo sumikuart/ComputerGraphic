@@ -29,6 +29,7 @@ namespace ComputerGraphic.Code
         protected override void OnLoad()
         {
             base.OnLoad();
+            CursorState = CursorState.Grabbed;
 
             GL.ClearColor(0.1f, 0.1f, 0.1f, 1.0f);
             GL.Enable(EnableCap.DepthTest);
@@ -44,11 +45,15 @@ namespace ComputerGraphic.Code
 
             Renderer rendTri = new Renderer(mat, new TriangleMesh());
             Renderer rendCub = new Renderer(mat, new CubeMesh());
-            Renderer rendSphere = new Renderer(mat, new SphereMesh(1, 2));
+            //Renderer rendSphere = new Renderer(mat, new SphereMesh(1, 2));
+            //Renderer rendCylinder = new Renderer(mat, new CylinderMesh(1,1,1,10));
+            Renderer rendCapsule = new Renderer(mat, new CapsuleMesh(.5f,1,1));
 
             GameObject triangle = new GameObject(rendTri, this);
             GameObject cube = new GameObject(rendCub, this);
-            GameObject sphere = new GameObject(rendSphere, this);
+            //GameObject sphere = new GameObject(rendSphere, this);
+            //GameObject cylinder = new GameObject(rendCylinder, this);
+            GameObject capsule = new GameObject(rendCapsule, this);
 
             cube.transform.Position = new Vector3(1, 0, 0);
 
@@ -59,9 +64,13 @@ namespace ComputerGraphic.Code
             gameObjects.Add(cam);
             gameObjects.Add(triangle);
             gameObjects.Add(cube);
-            gameObjects.Add(sphere);
+            //gameObjects.Add(sphere);
+            //gameObjects.Add(cylinder);
+            gameObjects.Add(capsule);
 
-            sphere.AddComponent<KeybordMovement>();
+            //cylinder.AddComponent<KeybordMovement>();
+            //sphere.AddComponent<KeybordMovement>();
+            capsule.AddComponent<KeybordMovement>();
         }
 
         //En metode der kaldes når en frame renders
