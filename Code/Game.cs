@@ -45,18 +45,22 @@ namespace ComputerGraphic.Code
 
             Renderer rendTri = new Renderer(mat, new TriangleMesh());
             Renderer rendCub = new Renderer(mat, new CubeMesh());
-            //Renderer rendSphere = new Renderer(mat, new SphereMesh(1, 2));
-            //Renderer rendCylinder = new Renderer(mat, new CylinderMesh(1,1,1,10));
+            Renderer rendSphere = new Renderer(mat, new SphereMesh(1, 2));
+            Renderer rendCylinder = new Renderer(mat, new CylinderMesh(1,1,1,10));
             Renderer rendCapsule = new Renderer(mat, new CapsuleMesh(.5f,1,1));
 
             GameObject triangle = new GameObject(rendTri, this);
             GameObject cube = new GameObject(rendCub, this);
-            //GameObject sphere = new GameObject(rendSphere, this);
-            //GameObject cylinder = new GameObject(rendCylinder, this);
+            GameObject sphere = new GameObject(rendSphere, this);
+            GameObject cylinder = new GameObject(rendCylinder, this);
             GameObject capsule = new GameObject(rendCapsule, this);
 
-            cube.transform.Position = new Vector3(1, 0, 0);
+            cube.transform.Position = new Vector3(1, -2, 0);
+            sphere.transform.Position = new Vector3(5, 0, 0);
+            cylinder.transform.Position = new Vector3(-5, 0, 0);
+            capsule.transform.Position = new Vector3(1, 2, 0);
 
+            capsule.transform.Rotation = new Vector3(240,0,0);
             GameObject cam = new GameObject(null, this);
             cam.AddComponent<Camera>(60.0f, (float)Size.X, (float)Size.Y, 0.3f, 1000.0f);
             camera = cam.GetComponent<Camera>();
@@ -64,8 +68,8 @@ namespace ComputerGraphic.Code
             gameObjects.Add(cam);
             gameObjects.Add(triangle);
             gameObjects.Add(cube);
-            //gameObjects.Add(sphere);
-            //gameObjects.Add(cylinder);
+            gameObjects.Add(sphere);
+            gameObjects.Add(cylinder);
             gameObjects.Add(capsule);
 
             //cylinder.AddComponent<KeybordMovement>();
