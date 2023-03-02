@@ -18,16 +18,26 @@ namespace ComputerGraphic.Code.ObjectCode
 
         protected override float[] Vertices => base.Vertices;
 
+        
         private float radius;
         private int subs;
 
-        public SphereMesh(float radius, int subs) 
+        public SphereMesh(float radius, int subs, bool buffers = true) 
         { 
             this.radius = radius;
             this.subs = subs;
 
             BuildVertices();
-            GenerateBuffers();
+            if(buffers)
+                GenerateBuffers();
+        }
+        public uint[] getIndices()
+        {
+            return this.Indices;
+        }
+        public float[] getVertices()
+        {
+            return this.Vertices;
         }
 
         public override void Draw()
