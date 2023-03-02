@@ -25,8 +25,12 @@ namespace ComputerGraphic.Code
 
         public virtual void Draw()
         {
-            GL.BindVertexArray(vertexArrayObject);
-            GL.DrawElements(PrimitiveType.Triangles, Indices.Length, DrawElementsType.UnsignedInt, 0);
+            if(Indices != null)
+            {
+                GL.BindVertexArray(vertexArrayObject);
+                GL.DrawElements(PrimitiveType.Triangles, Indices.Length, DrawElementsType.UnsignedInt, 0);
+            }
+
         }
 
         protected virtual void GenerateBuffers()

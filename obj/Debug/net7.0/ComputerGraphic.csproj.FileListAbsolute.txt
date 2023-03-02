@@ -35,3 +35,4 @@ C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\Firs
 C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\obj\Debug\net7.0\ComputerGraphic.genruntimeconfig.cache
 C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\bin\Debug\net7.0\freetype6.dll
 C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\smikk\Desktop\Profession Bachelor\Forløb\2.Computergrafik\Opgaver\FirstWindow\ComputerGraphic\ComputerGraphic\bin\Debug\net7.0\SharpGL.dll

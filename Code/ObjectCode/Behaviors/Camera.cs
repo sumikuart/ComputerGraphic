@@ -35,7 +35,7 @@ namespace ComputerGraphic.Code.ObjectCode.Behaviors
  
         private Vector2 lastPos = new Vector2(0,0);
         private Vector2 delta = new Vector2(0, 0);
-        private float sensitivity = 5;
+        private float sensitivity = 9;
 
 
         public Camera(GameObject gameObject, Game window, float FOV, float aspectX, float aspectY, float near, float far) : base(gameObject, window)
@@ -55,6 +55,7 @@ namespace ComputerGraphic.Code.ObjectCode.Behaviors
 
         public override void Update(FrameEventArgs e)
         {
+          
 
             if (!window.IsFocused) // Check to see if the window is focused
             {
@@ -142,10 +143,7 @@ namespace ComputerGraphic.Code.ObjectCode.Behaviors
                 {
                     pitch -= delta.Y * sensitivity * (float)e.Time;
                 }
-            }
-            
-  
-
+            }            
 
 
 

@@ -11,7 +11,7 @@ namespace ComputerGraphic.Code
 {
     public class Material
     {
-        private Shader shader;
+        public Shader shader;
         private Dictionary<string,object> uniforms = new Dictionary<string,object>();
         private Dictionary<int,Texture> textures = new Dictionary<int, Texture>();
         public Material(string vertPath, string fragPath, Dictionary<string,object> uniforms) {

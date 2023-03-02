@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\ComputerGraphic.csproj": {}
+    "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj": {}
   },
   "projects": {
-    "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\ComputerGraphic.csproj": {
+    "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\ComputerGraphic.csproj",
+        "projectUniqueName": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj",
         "projectName": "ComputerGraphic",
-        "projectPath": "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\ComputerGraphic.csproj",
-        "packagesPath": "C:\\Users\\Mathias\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\mathias\\Documents\\Github\\ComputerGraphic\\obj\\",
+        "projectPath": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\ComputerGraphic.csproj",
+        "packagesPath": "C:\\Users\\smikk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\smikk\\Desktop\\Profession Bachelor\\Forløb\\2.Computergrafik\\Opgaver\\FirstWindow\\ComputerGraphic\\ComputerGraphic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mathias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\smikk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,6 +59,10 @@
             "SharpFont.Dependencies": {
               "target": "Package",
               "version": "[2.6.0, )"
+            },
+            "SharpGL": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "StbImageSharp": {
               "target": "Package",

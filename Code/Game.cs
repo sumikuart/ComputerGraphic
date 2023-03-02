@@ -1,9 +1,12 @@
 ﻿using ComputerGraphic.Code.ObjectCode;
 using ComputerGraphic.Code.ObjectCode.Behaviors;
+using ComputerGraphic.Code.ObjectRendere;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
+using System.Reflection.Metadata;
+using System.Xml.Linq;
 
 namespace ComputerGraphic.Code
 {
@@ -19,7 +22,10 @@ namespace ComputerGraphic.Code
         public float RotationDegree = 0;
 
         private List<GameObject> gameObjects = new List<GameObject>();
+
+ 
         private Camera camera;
+        private Material mat;
 
         public Game(GameWindowSettings gameWindowSettings, NativeWindowSettings nativeWindowSettings) : base(gameWindowSettings, nativeWindowSettings)
         {
@@ -40,7 +46,7 @@ namespace ComputerGraphic.Code
             uniforms.Add("texture0", wallArg);
             uniforms.Add("texture1", wallTex);
 
-            Material mat = new Material(@"..\..\..\Shaders/shader.vert", @"..\..\..\Shaders/shader.frag", uniforms);
+            mat = new Material(@"..\..\..\Shaders/shader.vert", @"..\..\..\Shaders/shader.frag", uniforms);
 
             Renderer rendTri = new Renderer(mat, new TriangleMesh());
             Renderer rendCub = new Renderer(mat, new CubeMesh());
@@ -50,7 +56,9 @@ namespace ComputerGraphic.Code
             GameObject cube = new GameObject(rendCub, this);
             GameObject sphere = new GameObject(rendSphere, this);
 
-            cube.transform.Position = new Vector3(1, 0, 0);
+            cube.transform.Position = new Vector3(3, 0, 2);
+            triangle.transform.Position = new Vector3(-3,0, 2);
+            sphere.transform.Position = new Vector3(0, 1, 0);
 
             GameObject cam = new GameObject(null, this);
             cam.AddComponent<Camera>(60.0f, (float)Size.X, (float)Size.Y, 0.3f, 1000.0f);
@@ -60,6 +68,13 @@ namespace ComputerGraphic.Code
             gameObjects.Add(triangle);
             gameObjects.Add(cube);
             gameObjects.Add(sphere);
+
+            ObjVolume obj1 = ObjVolume.LoadModel(@"..\..\..\Assets/Figures/deer.obj");
+            Renderer DeerRendere = new Renderer(mat, obj1);
+            GameObject Deer = new GameObject(DeerRendere, this);
+            Deer.transform.Position = new Vector3(0, 0, 0);
+
+            gameObjects.Add(Deer);
 
             sphere.AddComponent<KeybordMovement>();
         }
@@ -75,6 +90,8 @@ namespace ComputerGraphic.Code
             Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(60.0f), (float)Size.X / (float)Size.Y, 0.3f, 1000.0f);
 
             gameObjects.ForEach(x => x.Draw(camera.GetViewProjection()));
+
+  
 
             Context.SwapBuffers();
         }
